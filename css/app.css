@@ -1,0 +1,123 @@
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 1.5em;
+	color: #FCB970;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.text {
+	text-align: center;
+	padding-top: 100px;
+}
+
+/* Smoke container */
+
+#smoke {
+	position: absolute;
+	z-index: 3;
+	width: 1px; height: 190px;
+	left: 50%; bottom: 120px;
+}
+
+#cig {
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  height: 5px;
+  background-color: #FCB970;
+
+}
+
+#rectangle {
+	width: 150px;
+	height: 20px;
+	background: #FCB970;
+  display: block;
+  position: absolute;
+  bottom: 300px; left: 50%; margin-left:10px;
+}
+
+#topbox {
+	width: 300px;
+	height: 100px;
+	background: #FCB970;
+  margin: auto;
+	padding: 60px 60px 60px 60px;
+	z-index: 2;
+}
+
+#bottombox {
+	width: 300px;
+	height: 200px;
+	background: #BFBFBF;
+  margin: auto;
+	padding: 70px 0;
+	z-index: 2;
+}
+
+#bottombox:hover {
+	transform: translate(px);
+	animation-duration: 4s;
+}
+
+
+#navbar {
+  padding: 5px;
+  text-align: center;
+  z-index: 1;
+}
+
+#navbar a {
+	font-family: 'Roboto', sans-serif;
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+	color: #BFBFBF;
+	font-weight: bold;
+  z-index: 1;
+}
+
+#navbar:hover {
+}
+
+/* smoke balls */
+
+#smoke span {
+  display: block;
+	position: absolute;
+	bottom: 155px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid #4b4b4b;
+	border-radius: 35px;
+	left: -14px; opacity: 0;
+	transform: scale(0.2);
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(20px, -190px) }
+}
+
+#smoke .s0 { animation: smokeL 10s 0s infinite }
+#smoke .s1 { animation: smokeR 10s 1s infinite }
+#smoke .s2 { animation: smokeL 10s 2s infinite }
+#smoke .s3 { animation: smokeR 10s 3s infinite }
+#smoke .s4 { animation: smokeL 10s 4s infinite }
+#smoke .s5 { animation: smokeR 10s 5s infinite }
+#smoke .s6 { animation: smokeL 10s 6s infinite }
+#smoke .s7 { animation: smokeR 10s 7s infinite }
+#smoke .s8 { animation: smokeL 10s 8s infinite }
+#smoke .s9 { animation: smokeR 10s 9s infinite }
